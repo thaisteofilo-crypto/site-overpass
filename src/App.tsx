@@ -443,7 +443,7 @@ function HowItWorks() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-5xl mx-auto mb-16 reveal">
           <Eyebrow>Como funciona</Eyebrow>
-          <h2 className="font-display mb-6" style={{ color: 'var(--cream)', fontSize: 'clamp(28px, 3.6vw, 60px)', lineHeight: 1.18, letterSpacing: '-0.025em', whiteSpace: 'nowrap' }}>
+          <h2 className="font-display mb-6" style={{ color: 'var(--cream)', fontSize: 'clamp(28px, 3.6vw, 60px)', lineHeight: 1.18, letterSpacing: '-0.025em' }}>
             Um sistema de três camadas
           </h2>
           <p className="font-body hero-banner-sub" style={{ color: 'var(--cream-soft)', margin: '0 auto', textAlign: 'center', maxWidth: 'none' }}>
@@ -489,7 +489,7 @@ export default function App() {
       <div className="scroll-progress" style={{ width: `${scrollProgress}%` }} />
 
       {/* ── NAV : Faculty 3-col grid ── */}
-      <nav className="nav-simple fixed top-0 inset-x-0 z-50 px-8 py-4"
+      <nav className="nav-simple fixed top-0 inset-x-0 z-50 px-4 sm:px-8 py-3 sm:py-4"
         style={{ background: 'rgba(0,0,0,0.82)', backdropFilter: 'blur(16px)', borderBottom: '1px solid var(--line)' }}>
         <a href="#" aria-label="Overpass">
           <img src="/overlens-white.png" alt="Overlens" style={{ height: 18, width: 'auto', display: 'block' }} />
@@ -770,7 +770,7 @@ export default function App() {
               Se você se reconhece em algum desses pontos, o Overpass não vai te servir. E a gente prefere te dizer agora.
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-4 md:gap-6 reveal-stagger">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 reveal-stagger">
             {[
               { title: 'Quem busca atalho', desc: 'Fórmulas prontas, hacks de IA, promessas de dinheiro fácil. Aqui o resultado depende de aplicação real, não de prompt mágico.' },
               { title: 'Quem só consome', desc: 'Quem quer apertar botão, copiar prompt e absorver conteúdo passivamente. Sem reflexão, não há nexialismo.' },
@@ -1236,11 +1236,12 @@ export default function App() {
       </div>
 
       {/* ── FLOATING BUTTONS (voltar ao topo + WhatsApp) ── */}
-      <div style={{ position: 'fixed', bottom: 20, right: 12, display: 'flex', flexDirection: 'column', gap: 10, zIndex: 50 }}>
+      <div className="fixed right-3 bottom-24 md:bottom-5 z-50 flex flex-col gap-2.5">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Voltar ao topo"
-          style={{ width: 56, height: 56, borderRadius: '50%', background: 'var(--surface-2)', border: '1px solid var(--line-strong)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--cream)', boxShadow: '0 4px 16px rgba(0,0,0,0.3)', transition: 'transform 0.2s ease' }}
+          className="hidden md:flex"
+          style={{ width: 56, height: 56, borderRadius: '50%', background: 'var(--surface-2)', border: '1px solid var(--line-strong)', cursor: 'pointer', alignItems: 'center', justifyContent: 'center', color: 'var(--cream)', boxShadow: '0 4px 16px rgba(0,0,0,0.3)', transition: 'transform 0.2s ease' }}
           onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.08)')}
           onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
         >

@@ -711,6 +711,7 @@ details[open] .faq-plus { transform: rotate(45deg); background: rgba(255, 255, 2
   bottom: 18px;
   left: 50%;
   z-index: 60;
+  max-width: calc(100vw - 24px);
   background: rgba(0, 0, 0, 0.78);
   backdrop-filter: blur(14px);
   border: 1px solid var(--atlas-line);
@@ -721,6 +722,14 @@ details[open] .faq-plus { transform: rotate(45deg); background: rgba(255, 255, 2
   gap: 14px;
   box-shadow: 0 12px 40px rgba(0,0,0,0.6);
   animation: slide-up-cta 0.8s cubic-bezier(.22,1,.36,1) 1.5s both;
+}
+@media (max-width: 480px) {
+  .sticky-cta {
+    padding: 6px 6px 6px 16px;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .sticky-cta .strike { display: none; }
 }
 
 /* ── TAB BUTTON ── */
@@ -998,7 +1007,7 @@ details[open] .faq-plus { transform: rotate(45deg); background: rgba(255, 255, 2
 }
 .marquee-card {
   flex: 0 0 auto;
-  width: 320px;
+  width: clamp(260px, 78vw, 320px);
   aspect-ratio: 1080 / 1620;
   border-radius: 20px;
   background: linear-gradient(135deg, #2a2a2a, #0a0a0a);
