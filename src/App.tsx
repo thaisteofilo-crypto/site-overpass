@@ -1029,7 +1029,7 @@ export default function App() {
                 <blockquote
                   className="font-body italic"
                   style={{ color: 'var(--atmos)', fontSize: 15, lineHeight: 1.4, margin: 0 }}>
-                  Nunca vi um curso tão profundo.<br />Isso me faz ter orgulho de cada centavo investido nessa plataforma.
+                  Nunca vi um curso tão profundo.<br />Isso me faz ter orgulho de cada<br />centavo investido nessa plataforma.
                 </blockquote>
                 <figcaption className="font-body text-[13px] mt-2" style={{ color: 'var(--cream-soft)' }}>
                   Lívia Alves Fernandes · Aluna Overpass
@@ -1072,7 +1072,7 @@ export default function App() {
                 <blockquote
                   className="font-body italic"
                   style={{ color: 'var(--atmos)', fontSize: 15, lineHeight: 1.4, margin: 0 }}>
-                  Eu amo a didática do Ruan, ele me ajuda a pensar e a raciocinar.
+                  Eu amo a didática do Ruan, ele<br />me ajuda a pensar e a raciocinar.
                 </blockquote>
                 <figcaption className="font-body text-[13px] mt-2" style={{ color: 'var(--cream-soft)' }}>
                   Andressa Alves
@@ -1119,7 +1119,7 @@ export default function App() {
                     <blockquote
                       className="font-body italic"
                       style={{ color: 'var(--atmos)', fontSize: 15, lineHeight: 1.4, margin: 0 }}>
-                      O curso é tão completo que aborda até as suas crenças,<br />e isso é fundamental.
+                      O curso é tão completo que aborda até<br />as suas crenças, e isso é fundamental.
                     </blockquote>
                     <figcaption className="font-body text-[13px] mt-2" style={{ color: 'var(--cream-soft)' }}>
                       Ramon Rodrigues Marques · Aluno Overpass
