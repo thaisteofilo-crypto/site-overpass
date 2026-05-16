@@ -1,29 +1,21 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import { viteSingleFile } from 'vite-plugin-singlefile'
 
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    {
-      name: 'iife-html',
-      enforce: 'post',
-      apply: 'build',
-      transformIndexHtml(html: string) {
-        return html.replace(/type="module" crossorigin/g, 'defer')
-      },
-    },
+    viteSingleFile({ removeViteModuleLoader: true }),
   ],
   base: './',
   build: {
+    assetsInlineLimit: 100_000_000,
+    cssCodeSplit: false,
     rollupOptions: {
       output: {
-        format: 'iife',
         inlineDynamicImports: true,
-        entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].js',
-        assetFileNames: 'assets/[name][extname]',
       },
     },
   },
