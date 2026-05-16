@@ -736,7 +736,7 @@ export default function App() {
               </div>
             ))}
           </div>
-          <div className="mt-20 flex justify-end reveal">
+          <div className="mt-20 flex justify-start reveal">
             <figure className="flex gap-3 items-start" style={{ maxWidth: 420 }}>
               <span aria-hidden="true" className="font-display"
                 style={{ color: 'var(--cream-mute)', fontSize: 22, lineHeight: 1, marginTop: 2 }}>
