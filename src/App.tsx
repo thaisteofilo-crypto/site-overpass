@@ -1105,7 +1105,7 @@ export default function App() {
                   Tudo que você precisa saber<br />antes de garantir sua entrada.
                 </p>
                 <Button asChild variant="outline" size="lg" className="mb-10">
-                  <a href="#" className="inline-flex items-center gap-3">
+                  <a href="https://wa.me/5511947247072" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3">
                     <WhatsAppIcon size={18} />
                     <span>Envie uma mensagem</span>
                   </a>
@@ -1175,7 +1175,7 @@ export default function App() {
             </p>
             <div className="flex items-center justify-center gap-3 flex-wrap">
               <ArrowPill onClick={openForm}>Entrar no Overpass</ArrowPill>
-              <ArrowPill href="#" dark>Falar no WhatsApp</ArrowPill>
+              <ArrowPill onClick={() => window.open('https://wa.me/5511947247072', '_blank')} dark>Falar no WhatsApp</ArrowPill>
             </div>
           </div>
         </div>
@@ -1202,9 +1202,14 @@ export default function App() {
             <div>
               <p className="font-eyebrow text-[11px] mb-4" style={{ color: 'var(--cream-mute)', letterSpacing: '0.18em', textTransform: 'uppercase' }}>Comunidade</p>
               <ul className="flex flex-col gap-2 font-body text-[13px]" style={{ color: 'var(--cream-soft)' }}>
-                {[['#quem-ensina', 'Quem conduz'], ['#depoimentos-section', 'Depoimentos'], ['#', 'WhatsApp'], ['#', 'Newsletter']].map(([href, label]) => (
-                  <li key={label}><a href={href} style={{ color: 'inherit' }}>{label}</a></li>
-                ))}
+                {[['#quem-ensina', 'Quem conduz'], ['#depoimentos-section', 'Depoimentos'], ['https://wa.me/5511947247072', 'WhatsApp'], ['#', 'Newsletter']].map(([href, label]) => {
+                  const isExternal = href.startsWith('http')
+                  return (
+                    <li key={label}>
+                      <a href={href} style={{ color: 'inherit' }} {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{label}</a>
+                    </li>
+                  )
+                })}
               </ul>
             </div>
             <div>
@@ -1250,7 +1255,7 @@ export default function App() {
           </svg>
         </button>
         <button
-          onClick={() => window.open('https://wa.me/', '_blank')}
+          onClick={() => window.open('https://wa.me/5511947247072', '_blank')}
           aria-label="Falar no WhatsApp"
           style={{ width: 56, height: 56, borderRadius: '50%', background: '#25D366', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', boxShadow: '0 4px 16px rgba(0,0,0,0.3)', transition: 'transform 0.2s ease' }}
           onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.08)')}
