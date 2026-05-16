@@ -492,7 +492,7 @@ export default function App() {
       <nav className="nav-simple fixed top-0 inset-x-0 z-50 px-4 sm:px-8 py-3 sm:py-4"
         style={{ background: 'rgba(0,0,0,0.82)', backdropFilter: 'blur(16px)', borderBottom: '1px solid var(--line)' }}>
         <a href="#" aria-label="Overpass">
-          <img src="/overlens-white.png" alt="Overlens" style={{ height: 18, width: 'auto', display: 'block' }} />
+          <img src="./overlens-white.png" alt="Overlens" style={{ height: 18, width: 'auto', display: 'block' }} />
         </a>
         <div className="flex justify-end">
           <Button variant="default" size="sm" onClick={openForm}>
@@ -503,7 +503,7 @@ export default function App() {
 
       {/* ── 01. HERO : image full-bleed, centered content ── */}
       <section className="hero-banner">
-        <img src="/hero-banner.png?v=2" alt="Overpass, plataforma de evolução criativa" className="hero-banner-img" />
+        <img src="./hero-banner.png?v=2" alt="Overpass, plataforma de evolução criativa" className="hero-banner-img" />
         <div className="hero-banner-overlay" />
         <div className="hero-banner-content hero-animate">
           <Eyebrow>Overpass</Eyebrow>
@@ -527,18 +527,18 @@ export default function App() {
             {[...Array(2)].map((_, dup) => (
               <div key={dup} className="flex" style={{ gap: 12 }}>
                 {[
-                  { title: 'Protocolo 3-2-1', image: '/cards/protocolo-3-2-1.png' },
-                  { title: 'AI First',         image: '/cards/ai-first.png' },
-                  { title: 'Nexgen',           image: '/cards/nexgen.png' },
-                  { title: 'Syntax',           image: '/cards/syntax.png' },
-                  { title: 'Codexia',          image: '/cards/codexia.png' },
-                  { title: 'Chrome',           image: '/cards/chrome.png' },
-                  { title: 'Spectrum',         image: '/cards/spectrum.png' },
-                  { title: 'Synthetic',        image: '/cards/synthetic.png' },
-                  { title: 'Expedição Global', image: '/cards/expedicao-global.png' },
-                  { title: 'FIT',              image: '/cards/fit.png' },
-                  { title: 'Maestro',          image: '/cards/maestro.png' },
-                  { title: 'Codexia II',       image: '/cards/codexia-1.png' },
+                  { title: 'Protocolo 3-2-1', image: './cards/protocolo-3-2-1.png' },
+                  { title: 'AI First',         image: './cards/ai-first.png' },
+                  { title: 'Nexgen',           image: './cards/nexgen.png' },
+                  { title: 'Syntax',           image: './cards/syntax.png' },
+                  { title: 'Codexia',          image: './cards/codexia.png' },
+                  { title: 'Chrome',           image: './cards/chrome.png' },
+                  { title: 'Spectrum',         image: './cards/spectrum.png' },
+                  { title: 'Synthetic',        image: './cards/synthetic.png' },
+                  { title: 'Expedição Global', image: './cards/expedicao-global.png' },
+                  { title: 'FIT',              image: './cards/fit.png' },
+                  { title: 'Maestro',          image: './cards/maestro.png' },
+                  { title: 'Codexia II',       image: './cards/codexia-1.png' },
                 ].map((c, i) => (
                   <div key={`${dup}-${i}`} className="marquee-card">
                     <img src={c.image} alt={c.title} loading="lazy" />
@@ -991,7 +991,7 @@ export default function App() {
             {/* RIGHT — brand + preço + lote (centralizado) */}
             <CardContent className="ticket-side ticket-side--right ticket-side--center">
               <div className="ticket-brand">
-                <img src="/overlens-white.png" alt="Overlens" style={{ height: 16, width: 'auto', display: 'block' }} />
+                <img src="./overlens-white.png" alt="Overlens" style={{ height: 16, width: 'auto', display: 'block' }} />
               </div>
 
               <div className="ticket-price-block">
@@ -1046,7 +1046,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto instructor-grid">
           <div className="instructor-portrait reveal-left">
             <img
-              src="/ruan-time-to-build.webp"
+              src="./ruan-time-to-build.webp"
               alt="Ruan Braz : fundador da Overlens"
               className="pi-image"
               loading="lazy"
@@ -1186,7 +1186,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-10 mb-10">
             <div>
-              <img src="/overlens-white.png" alt="Overlens" style={{ height: 20, width: 'auto', display: 'block', marginBottom: 16 }} />
+              <img src="./overlens-white.png" alt="Overlens" style={{ height: 20, width: 'auto', display: 'block', marginBottom: 16 }} />
               <p className="font-body text-[12px] leading-relaxed" style={{ color: 'var(--cream-mute)' }}>
                 Plataforma de evolução criativa da Overlens. Para quem aprendeu que criar é mais que executar.
               </p>
