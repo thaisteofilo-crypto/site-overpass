@@ -746,7 +746,7 @@ export default function App() {
                 <blockquote
                   className="font-body italic"
                   style={{ color: 'var(--atmos)', fontSize: 15, lineHeight: 1.4, margin: 0 }}>
-                  Muito interessante que o objetivo do projeto<br />tem mostrado: formar pessoas de verdade, com profundidade.
+                  Muito interessante que o objetivo do projeto<br />tem mostrado: formar pessoas de verdade,<br />com profundidade.
                 </blockquote>
                 <figcaption className="font-body text-[13px] mt-2" style={{ color: 'var(--cream-soft)' }}>
                   Tiago Matias Xavier · Aluno Overpass
