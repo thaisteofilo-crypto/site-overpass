@@ -1,0 +1,53 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+*.local
+
+# Logs / caches
+*.log
+.vite/
+.cache/
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Imagens de iteração soltas na raiz (screenshots de versões antigas)
+/atlas-*.png
+/bw-*.png
+/carousel-*.png
+/em-breve.png
+/expanded-*.png
+/faculty-*.png
+/footer-detail.png
+/livia-*.png
+/logo-nav.png
+/marquee-*.png
+/nav-*.png
+/overlens-snapshot.md
+/faculty-snapshot.md
+/para-quem-*.png
+/platform-*.png
+/pricing-section.png
+/reorganized-*.png
+/testimonials-*.png
+/v3-*.png
+/v4-*.png
+/v5-*.png
+/yan-faq.png
+/Banner/
+/Cards/
+/Logos/
+
+# Skills (módulo separado, opcional)
+/skills/
+/skills-lock.json
+
+# Configuração e contexto interno (não publicar)
+/.claude/
+/.agents/
+/.playwright-mcp/
