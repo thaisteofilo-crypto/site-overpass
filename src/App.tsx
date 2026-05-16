@@ -1019,7 +1019,7 @@ export default function App() {
           <p className="text-center font-body text-[12px] mt-8 max-w-2xl mx-auto" style={{ color: 'var(--cream-mute)' }}>
             <strong style={{ color: 'var(--cream-soft)' }}>Não prometemos resultado financeiro.</strong> Prometemos a estrutura para você construir o seu.
           </p>
-          <div className="mt-16 flex justify-end reveal">
+          <div className="mt-16 flex justify-start reveal">
             <figure className="flex gap-3 items-start" style={{ maxWidth: 420 }}>
               <span aria-hidden="true" className="font-display"
                 style={{ color: 'var(--cream-mute)', fontSize: 22, lineHeight: 1, marginTop: 2 }}>
