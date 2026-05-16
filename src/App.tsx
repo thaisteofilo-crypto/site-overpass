@@ -867,64 +867,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── 08. O RESULTADO EM PRÁTICA ── De / Para cards ── */}
-      <section id="resultado" className="section-screen py-20 px-6 md:px-14">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-14 reveal">
-            <Eyebrow>Resultado</Eyebrow>
-            <h2 className="font-display mb-4" style={{ color: 'var(--cream)', fontSize: 'clamp(36px, 4.2vw, 60px)', lineHeight: 1.18, letterSpacing: '-0.025em' }}>
-              O resultado<br />em prática.
-            </h2>
-            <p className="font-body text-[15px]" style={{ color: 'var(--cream-soft)', maxWidth: 440 }}>
-              Não é teoria. É o que alunos reais saíram construindo.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-5 reveal-stagger">
-            {[
-              { from: 'Pensando em desistir da profissão', to: 'Fechando cliente no meio da apresentação', name: 'Maiham Therena', quote: 'Em pensar que eu já tinha pensado em desistir de ser designer. Consegui fazer um fechamento no meio da apresentação.' },
-              { from: 'Demitida, sem renda', to: 'Conseguindo os primeiros clientes', name: 'Bia Rosa', quote: 'Quando eu comprei tava muito mal de grana, tinha sido desligada. E, agora, to conseguindo entrar em contato com os primeiros clientes.' },
-              { from: 'Curiosa, sem foco profissional', to: 'Segura de que design é seu lugar', name: 'Marcella Kaminda', quote: 'Passei a vida inteira sendo curiosa e sem conseguir focar. Hoje vejo que o design é realmente meu lugar.' },
-            ].map((r) => (
-              <div key={r.name} className="deliverable-card flex flex-col gap-4">
-                <div>
-                  <p className="font-eyebrow--upper font-eyebrow text-[10px] mb-2" style={{ color: 'var(--cream-mute)' }}>De</p>
-                  <p className="font-body text-[14px] leading-snug" style={{ color: 'var(--cream-soft)' }}>{r.from}</p>
-                </div>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/>
-                </svg>
-                <div>
-                  <p className="font-eyebrow--upper font-eyebrow text-[10px] mb-2" style={{ color: 'var(--accent)' }}>Para</p>
-                  <p className="font-body text-[15px] font-semibold leading-snug" style={{ color: 'var(--cream)' }}>{r.to}</p>
-                </div>
-                <div className="mt-auto pt-4" style={{ borderTop: '1px solid var(--line)' }}>
-                  <p className="font-body text-[13px] leading-relaxed mb-2" style={{ color: 'var(--cream-soft)', fontStyle: 'italic' }}>"{r.quote}"</p>
-                  <p className="font-eyebrow text-[11px]" style={{ color: 'var(--cream-mute)' }}>{r.name}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-16 flex justify-start reveal">
-            <figure className="flex gap-3 items-start" style={{ maxWidth: 420 }}>
-              <span aria-hidden="true" className="font-display"
-                style={{ color: 'var(--cream-mute)', fontSize: 22, lineHeight: 1, marginTop: 2 }}>
-                "
-              </span>
-              <div>
-                <blockquote
-                  className="font-body italic"
-                  style={{ color: 'var(--atmos)', fontSize: 15, lineHeight: 1.4, margin: 0 }}>
-                  A cada aula é um monte de coisa<br />que encaixa na minha cabeça.
-                </blockquote>
-                <figcaption className="font-body text-[13px] mt-2" style={{ color: 'var(--cream-soft)' }}>
-                  Bruno Chaves · Aluno Overpass
-                </figcaption>
-              </div>
-            </figure>
-          </div>
-        </div>
-      </section>
-
       <section id="depoimentos-section" className="section-screen py-20 px-6 md:px-14"
 >
         <div className="max-w-7xl mx-auto">
@@ -969,7 +911,7 @@ export default function App() {
           <div className="text-center mb-12 reveal">
             <Eyebrow>Comece sua jornada</Eyebrow>
             <h2 className="font-display" style={{ color: 'var(--cream)', fontSize: 'clamp(36px, 4.2vw, 60px)', lineHeight: 1.18, letterSpacing: '-0.025em' }}>
-              O melhor valor pra você.
+              O melhor valor pra você
             </h2>
           </div>
 
