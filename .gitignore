@@ -1,8 +1,7 @@
 # Dependências
 node_modules/
 
-# Build
-dist/
+# Build local (mantemos dist/ no repo para abertura direta sem npm install)
 *.local
 
 # Logs / caches
